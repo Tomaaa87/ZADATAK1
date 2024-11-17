@@ -59,7 +59,9 @@ p {
   max-width: 800px;
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.7);
-  border-radius: 8px;
+  border-radius: 10px;
+  align-items: center;
+  text-align: center;
 }
 
 img {
@@ -111,7 +113,8 @@ nav a:hover {
   max-width: 1200px;
   padding: 20px;
   box-sizing: border-box;
-  border: 2px solid #333; 
+  border: 2px solid #333;
+  height: fit-content;
 }
 
 .card {
@@ -121,7 +124,9 @@ nav a:hover {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 2px solid #333; 
+  border: 2px solid #333;
+  align-items: center;
+  height: fit-content;
 }
 
 .card:hover {
@@ -165,6 +170,7 @@ button:hover {
 @media (max-width: 768px) {
   header h1 {
     font-size: 40px;
+    height: fit-content;
   }
 
   nav {
@@ -187,6 +193,7 @@ button:hover {
 
   .products-grid {
     grid-template-columns: 1fr; 
+    height: min-content;
   }
 }
 
@@ -268,4 +275,15 @@ button:hover {
   li:hover {
     background-color: #87CEEB;
   }
+}
+.products-grid {
+  grid-template-columns: 1fr; 
+  height: max-content;
+}
+.card{
+  height: fit-content;
+}
+.section id="Shop"{
+  height:100px;
+  
 }
