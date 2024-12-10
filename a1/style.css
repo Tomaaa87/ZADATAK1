@@ -276,14 +276,4 @@ button:hover {
     background-color: #87CEEB;
   }
 }
-.products-grid {
-  grid-template-columns: 1fr; 
-  height: max-content;
-}
-.card{
-  height: fit-content;
-}
-.section id="Shop"{
-  height:100px;
-  
-}
+

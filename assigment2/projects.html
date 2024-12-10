@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Tuning Projects</title>
+    <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+    <header>
+        <h1>OUR PROJECTS</h1>
+    </header>
+    <nav>
+        <div class="hamburger">☰</div>
+        <div class="hamburger-menu">
+            <a href="main.html">Main</a>
+            <a href="login.html">Login</a>
+            <a href="#shop">Shop</a>
+            <a href="projects.html">Projects</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+        <div class="desktop-menu">
+            <a href="main.html">Main</a>
+            <a href="login.html">Login</a>
+            <a href="#shop">Shop</a>
+            <a href="projects.html">Projects</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+    </nav>
+    <main>
+        <div class="gallery">
+            <img class="thumbnail" src="thumb-car1.jpg" alt="Tuning Project 1" data-full="car1.jpg">
+            <img class="thumbnail" src="thumb-car2.jpg" alt="Tuning Project 2" data-full="car2.jpg">
+            <img class="thumbnail" src="thumb-car3.jpg" alt="Tuning Project 3" data-full="car3.jpg">
+            <img class="thumbnail" src="thumb-car4.jpg" alt="Tuning Project 4" data-full="car4.jpg">
+        </div>
+    </main>
+
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage" />
+        <div id="caption"></div>
+    </div>
+
+    <footer>
+        <p>© 2024 Car Parts Company. All rights reserved.</p>
+    </footer>
+
+    <script src="projects.js"></script>
+    <script src="hamburger.js"></script>
+</body>
+</html>
