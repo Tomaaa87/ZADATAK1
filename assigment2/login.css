@@ -1,10 +1,8 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 
 body {
     font-family: Arial, sans-serif;
@@ -17,7 +15,6 @@ body {
     align-items: center;
     min-height: 100vh;
 }
-
 
 nav {
     width: 100%;
@@ -46,7 +43,6 @@ nav a:hover {
     background-color: red;
 }
 
-
 h2 {
     text-align: center;
     color: red; 
@@ -54,7 +50,6 @@ h2 {
     margin-bottom: 20px;
     font-size: 2rem;
 }
-
 
 form {
     background-color: rgba(0, 0, 0, 0.7); 
@@ -66,7 +61,6 @@ form {
     color: white;
     margin-bottom: 20px;
 } 
-
 
 label {
     display: block;
@@ -87,17 +81,14 @@ select {
     font-size: 1rem;
 }
 
-
 input::placeholder {
     color: #aaa;
 }
-
 
 small {
     color: grey;
     font-size: 0.8rem;
 }
-
 
 button {
     width: 100%;
@@ -115,11 +106,48 @@ button {
 button:hover {
     background-color: darkred;
 }
+
 .hamburger-menu {
     display: none;
 }
 
+.strength-meter {
+    height: 5px;
+    width: 100%;
+    background-color: #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
 
+.strength-bar {
+    height: 100%;
+    width: 0%;
+    border-radius: 5px;
+    transition: width 0.3s;
+}
+
+.strength-bar.weak {
+    background-color: red;
+    width: 33%;
+}
+
+.strength-bar.moderate {
+    background-color: orange;
+    width: 66%;
+}
+
+.strength-bar.strong {
+    background-color: green;
+    width: 100%;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    display: none;
+}
+
+/* Media Queries */
 @media (max-width: 768px) {
     h2 {
         font-size: 1.8rem;
@@ -134,8 +162,9 @@ button:hover {
         padding: 10px 15px;
         margin: 0 10px;
     }
+
     body {
-        background:auto;
+        background: auto;
         background-blend-mode: darken;
     }
 
@@ -170,10 +199,12 @@ button:hover {
     button {
         font-size: 0.9rem;
     }
+
     body {
-        background:auto;
+        background: auto;
         background-blend-mode: darken;
     }
+
     .desktop-menu {
         display: none; 
     }
