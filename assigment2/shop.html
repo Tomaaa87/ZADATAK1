@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Parts Shop</title>
     <link rel="stylesheet" href="shop.css">
+    <script src="accordion.js" defer></script>
 </head>
 <body>
     <header>
@@ -37,26 +38,57 @@
                     <img src="guma1.jpg" alt="Tires">
                     <h3>Tires</h3>
                     <p>High-performance tires for all vehicles.</p>
-                    <button>View Tires</button>
+                    <button class="accordion-toggle" data-target="tires">View Tires</button>
+                    <div class="accordion-content" id="tires">
+                        <ul>
+                            <li>Summer Tires</li>
+                            <li>Winter Tires</li>
+                            <li>All-Season Tires</li>
+                            <li>Performance Tires</li>
+                        </ul>
+                    </div>
                 </div>
+
                 <div class="category">
                     <img src="turbo1.png" alt="Engine Parts">
                     <h3>Engine Parts</h3>
                     <p>Durable engine components for reliable performance.</p>
-                    <button>View Engine Parts</button>
+                    <button class="accordion-toggle" data-target="engine-parts">View Engine Parts</button>
+                    <div class="accordion-content" id="engine-parts">
+                        <ul>
+                            <li>Engine Heads</li>
+                            <li>Turbochargers</li>
+                            <li>Exhaust Systems</li>
+                            <li>Air Intakes</li>
+                            <li>Intercoolers</li>
+                        </ul>
+                    </div>
                 </div>
+
                 <div class="category">
                     <img src="spo1.png" alt="Body Parts">
                     <h3>Body Parts</h3>
                     <p>Exterior and body parts to restore or upgrade your car.</p>
-                    <button>View Body Parts</button>
+                    <button class="accordion-toggle" data-target="body-parts">View Body Parts</button>
+                    <div class="accordion-content" id="body-parts">
+                        <ul>
+                            <li>Spoilers</li>
+                            <li>Full Body Kits</li>
+                            <li>Front Bumpers</li>
+                            <li>Rear Bumpers</li>
+                            <li>Side Skirts</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
+
     <script src="hamburger.js"></script>
+
     <footer>
         <p>&copy; 2024 Car Parts Shop. All rights reserved.</p>
     </footer>
 </body>
 </html>
+
