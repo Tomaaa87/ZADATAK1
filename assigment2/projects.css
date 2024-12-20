@@ -147,7 +147,7 @@ button {
     transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s;
     position: fixed; 
     bottom: 100px;
-    left: 50%; 
+    left: 95%; 
     transform: translateX(-50%); 
     z-index: 1000; 
 }
@@ -160,7 +160,7 @@ body.light-theme button {
 
 button:hover {
     background-color: #f0f0f0; 
-    transform: translateX(-50%) scale(1.1); 
+    /*transform: translateX(-50%) scale(1.1); -provjeri,vjerovatno izbrisati*/
 }
 
 body.light-theme button:hover {
@@ -168,10 +168,38 @@ body.light-theme button:hover {
 }
 
 button:active {
-    transform: translateX(-50%) scale(0.95); 
+    
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
+.gallery { 
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: center; 
+        gap: 10px; 
+        padding: 20px; 
+        align-items: center; 
+    } 
+.gallery-item { 
+        display: flex; 
+        flex-direction: column;
+        align-items: center; 
+        gap: 10px; 
+    } 
+.toggle-btn { 
+    all: unset; 
+    cursor: pointer; 
+    padding: 10px 20px; 
+    background-color: #e63946; 
+    color: white; 
+    border: 2px solid #e63946; 
+    border-radius: 5px; 
+    font-size: 1rem; 
+    text-transform: uppercase; 
+    font-weight: bold; 
+    transition: background-color 0.3s, border-color 0.3s; 
+} 
 
+/*dodaj boksove za conent za auta i prosiri tekst da lijepse izgleda i napravi i za telefon da radi*/
 @media (max-width: 768px) {
     .thumbnail {
         width: 120px;
