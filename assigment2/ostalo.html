@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Parts Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link rel="stylesheet" href="ostalo.css">
+</head>
+<nav>
+    <div class="hamburger">☰</div>
+    <div class="hamburger-menu">
+        <a href="main.html">Main</a>
+        <a href="login.html">Login</a>
+        <a href="shop.html">Shop</a>
+        <a href="projects.html">Projects</a>
+        <a href="oursevcies.html">Service</a>
+    </div>
+    <div class="desktop-menu">
+        <a href="main.html">Main</a>
+        <a href="login.html">Login</a>
+        <a href="shop.html">Shop</a>
+        <a href="projects.html">Projects</a>
+        <a href="oursevcies.html">Service</a>
+    </div>
+</nav>
+<body>
+    <h1>OSTALI TASKOVI</h1>
+    <p>Ovde su ostali taskovi koje nisam imao ideju implementirati na lijepsi nacin na moj website.</p>
+    <div class="container">
+        <button id="showSuccess">Show Success Message</button>
+        <button id="showError">Show Error Message</button>
+
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Part Name</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <div id="content"></div>
+        
+        
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="scripts.js"></script>
+    <script src="hamburger.js"></script>
+</body>
+</html>
