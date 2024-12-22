@@ -140,14 +140,14 @@ button:hover {
     background-color: green;
     width: 100%;
 }
-
-.error-message {
-    color: red;
-    font-size: 0.9em;
-    display: none;
+#weather{
+    text-align: center;
+    font-size: 20px;
+    
 }
 
-/* Media Queries */
+
+
 @media (max-width: 768px) {
     h2 {
         font-size: 1.8rem;

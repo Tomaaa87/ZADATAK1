@@ -1,3 +1,4 @@
+
 const password = document.getElementById('password');
 const confirmPassword = document.getElementById('confirmPassword');
 const strengthBar = document.getElementById('strengthBar');
