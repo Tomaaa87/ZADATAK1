@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Tuning Projects</title>
+    <link rel="stylesheet" href="projects.css">
+</head>
+<body class="dark-theme">
+    <header>
+        <h1>OUR PROJECTS</h1>
+    </header>
+    <nav>
+        <div class="hamburger">☰</div>
+        <div class="hamburger-menu">
+            <a href="main.html">Main</a>
+            <a href="login.html">Login</a>
+            <a href="shop.html">Shop</a>
+            <a href="projects.html">Projects</a>
+            <a href="oursevcies.html">Service</a>
+        </div>
+        <div class="desktop-menu">
+            <a href="main.html">Main</a>
+            <a href="login.html">Login</a>
+            <a href="shop.html">Shop</a>
+            <a href="projects.html">Projects</a>
+            <a href="oursevcies.html">Service</a>
+        </div>
+    </nav>
+    <main>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img class="thumbnail" src="auto1.jpg" alt="GOLF 7.5R" data-full="auto1.jpg">
+                <button class="toggle-btn" onclick="toggleVisibility('golfContent')">Show/Hide Golf 7.5R Tuned</button>
+            </div>
+            <div class="gallery-item">
+                <img class="thumbnail" src="auto2.jpg" alt="AUDI RS7" data-full="auto2.jpg">
+                <button class="toggle-btn" onclick="toggleVisibility('audiContent')">Show/Hide Audi RS7 ABT Tuned</button>
+            </div>
+            <div class="gallery-item">
+                <img class="thumbnail" src="auto3.jpg" alt="BMW M5 F10" data-full="auto3.jpg">
+                <button class="toggle-btn" onclick="toggleVisibility('bmwContent')">Show/Hide BMW M5 F10 Tuned</button>
+            </div>
+            <div class="gallery-item">
+                <img class="thumbnail" src="auto4.jpg" alt="VW TIGUAN" data-full="auto4.jpg">
+                <button class="toggle-btn" onclick="toggleVisibility('tiguanContent')">Show/Hide VW Tiguan R Line</button>
+            </div>
+        </div>
+        <div id="golfContent" class="content" style="display:none;">
+            <p>The Golf 7.5R tuned version features significant performance upgrades, including a remapped ECU, a high-flow exhaust system, and enhanced suspension for better handling and stability.</p>
+        </div>
+        <div id="audiContent" class="content" style="display:none;">
+            <p>The Audi RS7 ABT tuned version boasts a power output of over 700 HP, a redesigned aerodynamics package, and custom ABT interior trims that elevate both style and comfort.</p>
+        </div>
+        <div id="bmwContent" class="content" style="display:none;">
+            <p>The tuned BMW M5 F10 includes a stage 3 engine upgrade, sport-tuned suspension, and aggressive body modifications that enhance its track performance and aesthetic appeal.</p>
+        </div>
+        <div id="tiguanContent" class="content" style="display:none;">
+            <p>The engine-swapped VW Tiguan R Line is equipped with a powerful V6 engine, performance brakes, and custom styling that transforms it into a versatile high-performance SUV.</p>
+        </div>
+    </main>
+
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage" />
+        <div id="caption"></div>
+    </div>
+    <button id="theme-switcher" title="Switch Theme">
+        🌙
+    </button>
+
+    <footer>
+        <p>© 2024 Car Parts Company. All rights reserved.</p>
+    </footer>
+
+    <script src="projects.js"></script>
+    <script src="hamburger.js"></script>
+    <script src="lighttheme.js"></script>
+    <script src="toggleVisibility.js"></script>
+</body>
+</html>
